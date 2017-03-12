@@ -12,5 +12,6 @@
 8. [Punteros 2](https://github.com/AcecomFCUNI/Talleres/blob/master/Curso-C/Clase8.md)
 9. [Asignación Dinámica de Memoria](http://nbviewer.jupyter.org/github/Rogger794/Curso-C/blob/master/Clase9/Clase9.ipynb)
 10. [Estructuras](https://github.com/AcecomFCUNI/Talleres/blob/master/Curso-C/Clase10.md)
+11. [Listas](https://github.com/AcecomFCUNI/Talleres/blob/master/Curso-C/Clase11.md)
 12. [Ficheros](https://github.com/AcecomFCUNI/Talleres/blob/master/Curso-C/Clase12.md)
 

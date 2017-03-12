@@ -25,7 +25,7 @@ Dato, TipoElemento, Info, etc) y la segunda parte o campo es un puntero (denomin
 next, sgte) que apunta al siguiente elemento de la lista.
 
 
-
+Los enlaces se representan por flechas para facilitar la compresión de la conexión entre los nodos;
 ello indica que el enlace tiene la dirección en memoria del siguiente nodo. En la figura 1 los nodos
 forman una secuencia desde el primer elemento, al último de ellos. El primer nodo se enlaza al
 segundo, el segundo al tercero y así sucesivamente hasta el último nodo. El nodo último ha de

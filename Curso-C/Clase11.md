@@ -51,18 +51,12 @@ puntero que apunta al “siguiente” elemento de la lista. El primer nodo, fren
 por cabeza. La lista encadena nodos juntos desde el frente al final (cola) de la lista. El final se
 identifica como el nodo cuyo campo tiene el valor NULL = 0. La lista se recorre desde el primero
 al último nodo; en cualquier punto del recorrido la posición actual se referencia por el puntero
-“Ptr_actual”. En el caso que la lista no contiene nodo (está vacía), el puntero cabeza es nulo.Operaciones en las listas enlazadas:
+“Ptr_actual”. En el caso que la lista no contiene nodo (está vacía), el puntero cabeza es nulo.
+## Operaciones en las listas enlazadas:
 Una lista enlazada requiere unos controles para la gestión de los elementos contenidos en ellas.
 Estos controles se manifiestan en forma de operaciones que tendrán las siguientes funciones:
-- Declaración de los tipos nodo y puntero a nodo.
-- Inicialización o creación.
-- Insertar elementos en una lista.
-- Eliminar elementos de una lista.
-- Buscar elementos de una lista (comprobar elementos de una lista).
-- Recorrer una lista enlazada (visitar cada nodo de la lista).
-- Comprobar si la lista está vacía.
 
-**Declaración de un nodo:**
+**1. Declaración de un nodo:**
 Una lista se compone de una serie de nodos enlazados mediante punteros. En C podemos declarar
 un nuevo tipo de dato por un nodo mediante las palabras reservadas struct que contendrá las
 partes de nuestro nodo.
@@ -91,7 +85,7 @@ struct nodo *enlace;
 };
 ```
 
-**Putero de cabeza y cola:**
+**Puntero de cabeza y cola:**
 Normalmente, los programas no declaran realmente variables de tipo nodo. En su lugar cuando
 se construye y manipula una lista enlazada, a la lista se accede a través de uno o más punteros a
 los nodos. El acceso más frecuente a una lista enlaza es a través del primer nodo de la lista que
@@ -139,7 +133,7 @@ podemos reescribir la orden anterior de la siguiente manera:
 ```c
 printf("%1f",ptr_cabeza->dato);
 ```
-Construcción de una lista:
+**2. Construcción de una lista:**
 Un algoritmo para la creación de una lista enlazada entraña los siguientes pasos:
 Paso 1: Declaración del tipo de dato y el puntero de cabeza.
 Paso 2: Asignar memoria para un elemento del tipo definido anteriormente utilizando alguna de
@@ -185,7 +179,7 @@ Primero = Crearnodo(11,NULL);
 //Si ahora queremos añadir un nuevo elemento con valor 6 y situarlo en el primer lugar de la lista:
 Primero = Crearnodo(6,Primero);
 ```
-#### Insertar un elemento en la lista:
+**3. Insertar un elemento en la lista:**
 El algoritmo empleado para añadir o insertar un elemento en una lista enlazada varía dependiendo
 de la posición en que se desea insertar el elemento. La posición de inserción puede ser:
 • En la cabeza.
@@ -248,7 +242,7 @@ nuevo -> siguiente = anterior -> siguiente;
 anterior -> siguiente = nuevo;
 }
 ```
-Búsqueda de un elemento:
+**4. Búsqueda de un elemento**
 Dado que una función en C puede devolver un puntero, el algoritmo que sirva para localizar un
 elemento en una lista enlazada puede devolver un puntero a ese elemento.
 La función BuscarLista utiliza una variable puntero denominada indice que va recorriendo la
@@ -267,7 +261,7 @@ return indice;
 return NUll;
 }
 ```
-Supresión de un nodo en una lista:
+**5. Supresión de un nodo en una lista**
 La operación de eliminar un nodo de una lista enlazada supone enlazar el nodo anterior con
 el nodo siguiente al que se desea eliminar y liberar la memoria que ocupa. El algoritmo para
 eliminar un nodo que contiene un dato se puede expresar en estos pasos:

@@ -1,0 +1,2 @@
+- **Realizar un problema que llene un array y lo muestre el array de forma ordenada y a continuación de forma de invertida es decir si el array es 1 4 6 7 4 debera imprimir 1 4 6 7 4 7 6 4 1**
+- ****

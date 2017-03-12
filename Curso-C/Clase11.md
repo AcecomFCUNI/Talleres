@@ -30,7 +30,7 @@ ello indica que el enlace tiene la dirección en memoria del siguiente nodo. En 
 forman una secuencia desde el primer elemento, al último de ellos. El primer nodo se enlaza al
 segundo, el segundo al tercero y así sucesivamente hasta el último nodo. El nodo último ha de
 ser representado de forma diferente para significar que este nodo no se enlaza a ningún otro.
-Clasificación de las listas enlazadas:
+## Clasificación de las listas enlazadas
 Se pueden dividir en 4 categorías:
 - **Listas simplemente enlazadas:** Cada nodo contiene un único enlace que conecta ese nodo
 al nodo siguiente; es eficiente en recorridos directos.
@@ -41,6 +41,7 @@ elemento (cola) se enlaza al primer elemento (cabeza) de tal modo que la lista p
 recorrida en modo circular.
 - **Lista circular doblemente enlazada:** Una lista doblemente enlazada en la que el último
 elemento (cola) se enlaza al primer elemento y viceversa.
+
 Para cada tipo de estas cuatro estructuras de listas, se pueden elegir una implementación basada
 en arrays o una implementación basada en punteros. Estas implementaciones difieren en el modo
 en que se asigna la memoria para los datos de los elementos, como se enlazan juntos los elementos

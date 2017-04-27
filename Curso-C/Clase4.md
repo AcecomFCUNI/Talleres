@@ -133,3 +133,5 @@ long factorial(int n){
 <br>
 <img src="http://godieboy.com/wp-content/uploads/2009/12/graficoFactorial.png" width="700">
 <br>
+
+[Ejercicios Funciones](https://github.com/AcecomFCUNI/Talleres/tree/ff1be44076d93bacfe94c1184c9db86c2d690246/Curso-C/src/clase4)

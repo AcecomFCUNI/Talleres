@@ -1,5 +1,5 @@
-#Punteros 
-##Conceptos Previos
+# Punteros 
+## Conceptos Previos
 - **Tipos de variables:** las variables pueden almacenar solo el tipo de valores con el que fueron declaradas entre este tipos tenemos: int,float,long y ahora int**, float ***,etc.
 - **Dirección de Memoria:** Es la referencia al espacio de memoria donde se almacena una variable. Al declarar una variable automaticamente se le asigna una dirección de memoria. En la siguiente imagen vemos como se declara la variable y luego se imprime el valor de la dirección de memoria.
 ```c
@@ -150,3 +150,5 @@ int main()
 3. **Realizar una función que realice el paso por referencia para obtener el numero que mas se repite en una array**
 4. **Usando el puntero NULL verificar si en array de tamaño 50 existen un numero 3°+2 y 5°+1 si es asi que el puntero apunte a el sino mostrar en consola que no existe**
 5. **Se dispone de dos listas de enteros de tamaño 10, y se desea conocer la suma de productos de elementos homólogos. Se pide construir una función que calcule este valor**
+
+[Ejercicios Punteros](https://github.com/AcecomFCUNI/Talleres/tree/master/Curso-C/src/clase7)

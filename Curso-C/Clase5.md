@@ -130,3 +130,4 @@ Para realizar la transpuesta de una matriz se realiza se necesita de M una matri
 				T[j][i]=M[i][j];
 	}
 ```
+[Ejercicios Array y Matrices](https://github.com/AcecomFCUNI/Talleres/tree/master/Curso-C/src/clase5)

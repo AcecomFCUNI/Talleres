@@ -1,4 +1,4 @@
-#Arrays de punteros
+# Arrays de punteros
 Es un vector o arreglos que tiene por elementos punteros es decir almacenara direcciones de memoria.
 Ejemplo:
 ```c
@@ -17,7 +17,7 @@ void main(){
 	printf("valor de d=%d\n",d );
 }
 ```
-#Dobles Punteros
+# Dobles Punteros
 Son variables que almacenan direcciones de memoria de otras variables punteros. Es decir punteros que apunten a otros punteros.
 ```c
 #include <stdio.h>//doble puntero
@@ -47,7 +47,7 @@ int main()
 <br>
 <img src="https://4.bp.blogspot.com/_vooP-k3QJww/RyVGqdozgzI/AAAAAAAAABg/4BYR3CjB7to/s320/Array2d.png" width="600"> <br>
 
-##Ejercicios
+## Ejercicios
 1. Dado 2 punteros p1 que apunta a **a** y p2 que apunta a **b** realizar una funcion que haga que p1 apunte a donde apuntaba p2(b) y que p2 apunte a donde apuntaba p1(a)
 2. Dado un array con elementos del 0 al 9 verificar si el numero es capicua ejemplo a[]={6,1,2,1,6}; seria capicua.
 3. Verificar si una cadena es palindrome por ejemplo hoaoh es palindrome ya que si lo inviertes es la misma cadena.

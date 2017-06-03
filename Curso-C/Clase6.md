@@ -1,4 +1,4 @@
-#Cadenas
+# Cadenas
 ## Autor: Daniel Hidalgo
 Al igual que un arreglo que guarda tipos de datos, sea int, float, double, etc. Las cadenas (strings) son un tipo de arreglo que guardan "chars" (caracteres). La particularidad del arreglo tipo cadena es que no es obligatorio declarar el tamaño de este. 
 OJO: Al igual que un arreglo, el último “casillero” es un nulo ( '\0' ).
@@ -13,7 +13,7 @@ void main(){
 }
 ```
 
-###LIBRERÍA <STRING.H>:
+### LIBRERÍA <STRING.H>:
 Esta librería contiene una variedad de funciones útiles y prácticas para las cadenas, las más usadas son:
 - **strcmp():** Esta función compara 2 cadenas y evalúa cual es mayor. 
 
@@ -40,7 +40,7 @@ char strcpy(cad1,cad2); //El contenido de cad2 es copiado en cad1
 Int strlen(cad1); // Devuelve el tamaño (en enteros) de la cadena
 
 
-###EJERCICIOS:
+### EJERCICIOS:
 
 1. Invertir el orden de los caracteres de las siguiente frase: “Talk is cheap. Show me the code”.
 2. Contar cuantas palabras existe en la frase anterior y, además, agregar después de cada palabra el número de letras que contiene dicha palabra en vez de los espacios que separan dichas palabras: “Talk is cheap …” -> “Talk4is2cheap5…”

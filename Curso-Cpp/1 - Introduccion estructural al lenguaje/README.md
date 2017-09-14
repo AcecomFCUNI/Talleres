@@ -236,7 +236,98 @@ switch(variable_evaluada){
 		ejecutar_por_defecto();
 }
 ```
+
 ### 1.3.3 Estructuras iterativas
+Una estructura iterativa o conocida comunmente como un bucle hace que el programa ejecute repetidamente una serie de instrucciones hasta que una condición dada sea falsa. C ++ proporciona 3 tipos de bucles: while , do while , y for loops. 
 
-
+#### While
+```cpp
+while (condicion cumplida){
+    iterar_codigo();
+}
+```
+#### do while (siempre se ejecuta al menos una vez.)
+```cpp
+do{
+    iterar_codigo();
+}while(condicio cumplida);
+```
+#### for 
+```cpp
+for( inicializacion ; condicion logica ; operado){
+    iterar_codigo();
+}
+```
 ### 1.3.4 Funciones
+Una función es una secuencia de declaraciones diseñadas para realizar un trabajo en particular y pueden ser reutilizables en varios casos.
+#### Parametro y Argumento
+Variable declarada en la declaración de función.
+El valor que se pasa a la función por la persona que llama.
+
+#### Argumentos por valor
+Cuando un argumento se pasa por valor , el valor del argumento se copia en el parámetro de la función.
+```cpp
+void function(int variable1 , ...){
+    estructura_funcion();
+}
+```
+#### Argumentos por referencia
+Para pasar una variable por referencia, simplemente declaramos los parámetros de la función como referencias en lugar de variables normales.
+```cpp
+void funcion(int &valor){
+    valor = 6;
+}
+int main(){
+    int var1 = 5;
+    cout << "var1 = " << var1 << '\n';
+    funcion(var1);
+    cout << "var1 = " << var1 << '\n';
+    return 0;
+}
+```
+#### Argumentos por direccion
+ Pasar un argumento por dirección implica pasar la dirección de la variable de argumento en lugar de la variable de argumento en si.
+El paso por dirección suele utilizarse con punteros, y con mayor frecuencia se utilizan para señalar arrays integrados. 
+```cpp
+void funcion(int *valor){
+    *valor = 6;
+}
+int main(){
+    int var1 = 5;
+    cout << "var1 = " << var1 << '\n';
+    funcion(&var1);
+    cout << "var1 = " << var1 << '\n';
+    return 0;
+}
+```
+#### Sobrecarga de Funciones
+Permite crear múltiples funciones con el mismo nombre, siempre y cuando tengan diferentes parámetros. 
+```cpp
+int add(int x, int y){
+    return x+y;
+}
+double add(double x, double y){
+    return x+y;
+}
+int add(int x, int y, int z){
+    return x + y + z;
+}
+
+```
+### 1.3.5 Notas
+Una variable en C ++ es simplemente un objeto que tiene un nombre.
+Después de definir una variable, se le puede asignar un valor mediante el operador de asignación (el signo =):
+```cpp
+int x;
+x=5;
+```
+C ++ te permitirá definir una variable y darle un valor inicial en el mismo paso. Esto se llama inicialización .
+```cpp
+int x = 5;
+```
+Una sentencia sin cuerpo se denomina declaración nula y se declara usando un punto y coma único en lugar de la sentencia. 
+```cpp
+if (x > 10)
+    ;
+```
+Las direcciones se pasan realmente por valor, cuando pasa un puntero a una función por dirección, el valor del puntero (la dirección a la que apunta) se copia desde el argumento al parámetro de la función. En otras palabras, se pasa por valor! Si cambia el valor del parámetro de función, sólo está cambiando una copia, en consecuencia, no se cambiará el argumento de puntero original.

@@ -1,4 +1,7 @@
 # Plan de estudios - Curso de C++ | 2017 - II
+
+<p align="center"><img src="https://isocpp.org/files/img/cpp_logo.png"/></p>
+
 ## Esquema cronológico
 ## Docentes:
 * Arotoma Bacilio, Bitzer

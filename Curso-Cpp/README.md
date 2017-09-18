@@ -22,7 +22,7 @@
 * Definiciones
 	* Concepto de objeto, herencia, polimorfismo
 * Sintaxis de creación e instanciación de clases
-* Introducción a MACROS y estructura de proyecto
+* Introducción a MACROS
 	* Constantes y funciones
 	* Condicionales MACRO
 

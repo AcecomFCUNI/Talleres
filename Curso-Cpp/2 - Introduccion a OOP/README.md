@@ -1,4 +1,4 @@
-# Semana 2 - Introducción a la POO
+emana 2 - Introducción a la POO
 ## 1.1 Introducción
 Del alcance de la clase pasada hacemos énfasis en la comparación entre un lenguaje secuencial y estructurado, y uno con una lógica no lineal basado en unidades independientes y bien definidas. Es necesario un poco de abstracción para poder programar utilizando principios orientados a objetos, pero al invertirle el suficiente tiempo de planificación podremos implementar cualquier proyecto como una tarea rutinaria análoga al mundo tangible.
 ## 1.2 Definiciones
@@ -75,7 +75,51 @@ int main(){
 	cout << "2P: " << r1.perimetro() << endl;
 }
 ```
-# AÑADIR!!!!!!! ANALISIS 3- ETIQUETA PRIVATE
+
+> Análisis 3 - Etiqueta private
+```cpp
+class DateClass {
+    int mes; 
+    int dia; 
+    int año;
+};
+ // Por defecto todos los miembros de una clase son privados
+int main(){
+    DateClass date;
+    date.mes = 10; 
+    date.dia = 20; 
+    date.año = 2017; 
+ 
+    return 0;
+}
+```
+```cpp
+#include <iostream>
+ 
+class DateClass {
+    int mes; 
+    int dia; 
+    int año; 
+ 
+public:
+    void setDate(int month, int day, int year){
+        mes = month;
+        dia = day;
+        año = year;
+    }
+ 
+    void print() {
+        std::cout << mes << "/" << dia << "/" << año;
+    }
+};
+ 
+int main(){
+    DateClass date;
+    date.setDate(10, 20, 2017); 
+    date.print(); 
+    return 0;
+}
+```
 > Análisis 4 - Alteración de instancias
 
 ```cpp
@@ -122,10 +166,34 @@ void modif_rec(Rectangulo &R){
 	R.largo++;
 }
 ```
-# AÑADIR!!!!!!! INTRODUCCION A HERENCIA
-# AÑADIR!!!!!!! ANALISIS 4- HERENCIA
+# Introducción a Herencia
+> Análisis 5- Herencia
+```cpp
+#include <string>
+class Persona{
+public:
+    std::string name;
+    int age;
+    Persona(std::string nombre = "", int edad = 0) : name(nombre), age(edad){
+    }
+    std::string getName() const { return name; }
+    int getAge() const { return age; }
+};
+class Empleado: public Persona{
+public:
+    double Salario;
+    long empleado_ID;
+    //constructor
+    Empleada(double Salary, long empleadoID): Salario(Salary), empleado_ID(empleadoID){
+    }
+ 
+    void printNameAndSalary() const{
+        std::cout << name << ": " << Salario << '\n';
+    }
+};
 
-
+//La herencia nos permite reutilizar las clases haciendo que otras clases hereden sus miembros
+```
 ## A.1  Introducción a MACROS
 Se pueden considerar los MACROS de preprocesamiento como métodos literales que sirven de herramienta de código en un entorno de trabajo previo a la compilación de un programa en C o C++. Las directivas (o métodos) funcionan de manera secuencial
 

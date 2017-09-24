@@ -1,4 +1,4 @@
-emana 2 - Introducción a la POO
+# Semana 2 - Introducción a la POO
 ## 1.1 Introducción
 Del alcance de la clase pasada hacemos énfasis en la comparación entre un lenguaje secuencial y estructurado, y uno con una lógica no lineal basado en unidades independientes y bien definidas. Es necesario un poco de abstracción para poder programar utilizando principios orientados a objetos, pero al invertirle el suficiente tiempo de planificación podremos implementar cualquier proyecto como una tarea rutinaria análoga al mundo tangible.
 ## 1.2 Definiciones
@@ -169,30 +169,51 @@ void modif_rec(Rectangulo &R){
 # Introducción a Herencia
 > Análisis 5- Herencia
 ```cpp
-#include <string>
-class Persona{
-public:
-    std::string name;
-    int age;
-    Persona(std::string nombre = "", int edad = 0) : name(nombre), age(edad){
-    }
-    std::string getName() const { return name; }
-    int getAge() const { return age; }
-};
-class Empleado: public Persona{
-public:
-    double Salario;
-    long empleado_ID;
-    //constructor
-    Empleada(double Salary, long empleadoID): Salario(Salary), empleado_ID(empleadoID){
-    }
- 
-    void printNameAndSalary() const{
-        std::cout << name << ": " << Salario << '\n';
-    }
+#include <iostream>
+
+using namespace std;
+
+class Rectangulo{ // clase
+	protected: // Variables disponibles para clases hijo
+	int largo, ancho;
+
+	public: // Metodos publicos
+	Rectangulo(int a, int b){
+		largo = a;
+		ancho = b;
+	}
+
+	int area(){
+		return(largo*ancho);
+	}
+
+	int perimetro(){
+		return(2*largo + 2*ancho);
+	}
+
+	void printInfo(){
+		cout << "Largo : " << largo << endl;
+		cout << "Ancho: " << ancho << endl;
+	}
 };
 
-//La herencia nos permite reutilizar las clases haciendo que otras clases hereden sus miembros
+class Cuadrado: public Rectangulo{
+	public:
+	// ejemplo de constructor del hijo
+	Cuadrado(int l): Rectangulo(l, l){
+		// nada, si asi lo deseamos
+	}
+
+	void printInfo(){
+		cout << "Soy un cuadrado y derivo de un rectangulo" << endl;
+		cout << "Lado : " << ancho << endl; // Pudimos usar largo tambien
+	}
+};
+
+int main(){
+	Cuadrado c1(5);
+	c1.printInfo();
+}
 ```
 ## A.1  Introducción a MACROS
 Se pueden considerar los MACROS de preprocesamiento como métodos literales que sirven de herramienta de código en un entorno de trabajo previo a la compilación de un programa en C o C++. Las directivas (o métodos) funcionan de manera secuencial

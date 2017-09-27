@@ -1,5 +1,5 @@
 # Semana 3 - Programación basada en clases
-## 1 Definición
+## 1. Definición
 De lo estudiado en la clase pasada sabemos que una clase es el objetivo representativo al que debemos proyectarnos durante la fase de planeamiento de un proyecto (o código) para aprovechar el nivel de abstracción que nos ofrece c++ al modular nuestros programas. Hoy nos enfocaremos más en dos aspectos: el uso de las clases dinámicamente y su implementación modular
 
 ### 1.1 Repaso de clases y tipos de etiqueta

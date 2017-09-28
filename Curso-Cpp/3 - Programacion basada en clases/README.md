@@ -20,7 +20,7 @@ también se vuelven protegidos en la clase derivada.
 
 **Herencia protegida:** Al derivar de una clase, los parámetros _public_ y _protected_ se vuelven _protected_ en la clase derivada. 
 
-**Herencia protegida:** Al derivar de una clase, los parámetros _public_ y _protected_ se vuelven _private_ en la clase derivada.
+**Herencia privada:** Al derivar de una clase, los parámetros _public_ y _protected_ se vuelven _private_ en la clase derivada.
 
 > Análisis 2 - Repaso de sintaxis: Herencia
 

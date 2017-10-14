@@ -49,8 +49,3 @@
 ### Semana 6 - Templates (9/11)
 * Conceptos y usos
 * Sintaxis
-
-### Semana 7 - Conocimientos adicionales 1: Estructura de datos (16/11)
-* Pilas, colas, listas
-* Arboles
-* Tablas hash

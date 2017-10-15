@@ -35,17 +35,21 @@
 	* Compilación estructurada
 
 ## Después de semana de parciales:
-### Semana 4 - Polimorfismo y sobrecarga (19/10)
+### Semana 4 - Polimorfismo (19/10)
+* Clase \<vector>
 * Polimorfismo
-	* Definición y sintaxis
-* Sobrecarga de operadores
-	* Definición y sintaxis
+	* Definición
+	* Tipos
+	* Virtualización
 
-### Semana 5 - Manipulación de archivos (2/11)
+### Semana 5 - Sobrecarga
+* Por definir
+
+### Semana 6 - Manipulación de archivos (2/11)
 * Libreria fstream
 	* Operacion básicas
 * Ejemplo: Plotin
 
-### Semana 6 - Templates (9/11)
+### Semana 7 - Templates (9/11)
 * Conceptos y usos
 * Sintaxis

@@ -35,12 +35,15 @@
 	* Compilación estructurada
 
 ## Después de semana de parciales:
-### Semana 4 - Polimorfismo (19/10)
+### Semana 4 - Polimorfismo y sentencia 'friend' (19/10)
 * Clase \<vector>
 * Polimorfismo
 	* Definición
 	* Tipos
 	* Virtualización
+* Sentencia **friend**
+	* Clase **friend**
+	* Métodos **friend**
 
 ### Semana 5 - Sobrecarga
 * Por definir

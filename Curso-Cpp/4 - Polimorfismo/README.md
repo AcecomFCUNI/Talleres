@@ -369,3 +369,79 @@ int main(){
 	// Enemigo * e_ptr = &p;
 }
 ```
+## A.4 Sentencias **friend**
+Cuando deseamos establecer comunicación entre el contenido de clases (variables y/o métodos) lo que empleabamos usualemente era la __herencia__, sin embargo existe otra manera de acceder a este contenido sin una relación hereditaria. La sentencia __friend__ permite el acceso a los parámetros privados y protegidos de una clase ajena al entorno en el que se declare.
+
+### 1. Clase friend
+El primer uso para esta sentencia se emplea cuando se desea acceder a una clase desde otra no relacionada por herencia. Bastará con listar todas las clases que deseemos tengan acceso a la actual:
+
+```c++
+#include <iostream>
+
+using namespace std;
+
+class A{
+	int A_value;
+	A(int i){
+		A_value = i;
+	}
+	
+	// Lista de clases 'friend'
+	// friend class B;
+};
+
+class B{
+	A A_object;
+	
+	void printA(){
+		// Probamos acceder a una variable privada de A_object perteneciente a la clase 'A'
+		cout << A_object.A_value << endl;
+	}
+};
+
+
+int main(){}
+```
+
+### 2. Método friend
+Análogo al caso de clases, declararemos un método como __friend__ cuando deseemos concederle permisos, en este caso, solo a una función.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+class A; // Creamos el prototipo de la clase para que la clase B sepa que existe
+
+class B{ // Declaramos la clase B pero no la inicializamos
+	public:
+		static void printA(A a_object); // Prototipo estatico
+};
+
+class A{
+	int value;
+
+	public:	
+		friend void B::printA(A a_object);
+
+		A(int i){
+			value = i;
+	}
+};
+
+void B::printA(A a_object){
+	cout << a_object.value << endl;
+}
+
+
+int main(){
+	A a_obj(15);
+	B::printA(a_obj);
+}
+```
+
+### Observaciones:
+
+* Las sentencias __friend__ debe usarse con mesura. Su uso recurrente en situaciones que no lo exijan hacen que el codigo pierda portabilidad y sentido, dado que se ignora el paradigma de orientación a objetos.
+* La "amistad" no es mutua, Si una clase _A_ es amiga de otra _B_, no implica que automáticamente _B_ sea amiga de _A_.
+* La amistad no se hereda ni se comparte (_"El amigo de tu amigo no es necesariamente tu amigo. Un amigo tuyo no tiene que ser necesariamente amigo de tu hijo"_)

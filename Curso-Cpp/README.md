@@ -4,7 +4,6 @@
 
 ## Esquema cronológico
 ## Docentes:
-* Arotoma Bacilio, Bitzer
 * Vasquez Espinoza, Luis
 
 ## Antes de semana de parciales:

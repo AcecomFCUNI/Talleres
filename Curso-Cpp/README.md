@@ -44,14 +44,14 @@
 	* Clase **friend**
 	* Métodos **friend**
 
-### Semana 5 - Sobrecarga
-* Por definir
+### Semana 5 - Sobrecarga y Templates
+* Sobrecarga de operadores
+* Templates
+	* Templates de funciones
+	* Templates de clases
+* Introduccion a iteradores
 
 ### Semana 6 - Manipulación de archivos (2/11)
 * Libreria fstream
 	* Operacion básicas
 * Ejemplo: Plotin
-
-### Semana 7 - Templates (9/11)
-* Conceptos y usos
-* Sintaxis

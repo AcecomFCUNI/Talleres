@@ -50,8 +50,3 @@
 	* Templates de funciones
 	* Templates de clases
 * Introduccion a iteradores
-
-### Semana 6 - Manipulación de archivos (2/11)
-* Libreria fstream
-	* Operacion básicas
-* Ejemplo: Plotin

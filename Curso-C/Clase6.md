@@ -2,6 +2,9 @@
 ## Autor: Daniel Hidalgo
 Al igual que un arreglo que guarda tipos de datos, sea int, float, double, etc. Las cadenas (strings) son un tipo de arreglo que guardan "chars" (caracteres). La particularidad del arreglo tipo cadena es que no es obligatorio declarar el tamaño de este. 
 OJO: Al igual que un arreglo, el último “casillero” es un nulo ( '\0' ).
+<br>
+<img src="http://www.elcodigoascii.com.ar/codigo-americano-estandar-intercambio-informacion/codigo-ascii.png" width="900"> <br>
+
 ## Ejemplo
 ```c
 #include <stdio.h>
@@ -47,3 +50,5 @@ Int strlen(cad1); // Devuelve el tamaño (en enteros) de la cadena
 3. Invertir el orden de las palabras de la frase usada anterior mente: “Talk is cheap…” -> “klaT si paehc…”
 4. Invertir el orden de las palabras de la misma frase: “Talk is cheap. Show me the code”  -> “code the me Show .cheap is Talk”
 5. De la frase anterior, agregar las palabras de la frase: “To iterate is human, to recurse is divine” de forma intercalada (“Talk To cheap Iterate ...)
+
+[Ejercicios Cadenas](https://github.com/Visot/Talleres/tree/master/Curso-C/src/cadenas)
